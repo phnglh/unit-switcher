@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.custom-input-container:has(input:hover) {
+  background-color: #6b7280; 
+}
+
+.custom-input-container:has(input:focus) {
+  border-color: #3b82f6;
+}
