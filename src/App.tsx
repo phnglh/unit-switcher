@@ -15,7 +15,7 @@ const UnitInput = () => {
       .replace(/^-+/, "-") 
       .replace(
         /\./g,
-        (match, offset, string) => (string.indexOf(".") === offset ? "." : ""),
+        (_match, offset, string) => (string.indexOf(".") === offset ? "." : ""),
       );
 
     if (!cleaned || cleaned === "-" || isNaN(parseFloat(cleaned))) {
